@@ -22,7 +22,8 @@ function SEO({
           siteMetadata {
             title
             description
-            author
+            author,
+            url
           }
         }
       }
