@@ -3,18 +3,22 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const defaultProps = {
+  centered: false,
   horizontal: true,
   style: {},
 };
 
-const Tags = ({ tags, horizontal, style }) => (
-  <List horizontal={horizontal} style={style}>
+const Tags = ({
+  centered, tags, horizontal, style,
+}) => (
+  <List centered={centered} horizontal={horizontal} style={style}>
     {tags.map(tag => <Item key={tag}>{tag}</Item>)}
   </List>
 );
 
 const List = styled.div`
   align-items: center;
+  justify-content: ${({ centered }) => (centered ? 'center' : 'flex-start')};
   display: flex;
   flex-direction: ${({ horizontal }) => (horizontal ? 'row' : 'column')};
   flex-wrap: wrap;
@@ -33,6 +37,7 @@ const Item = styled.div`
 
 Tags.defaultProps = defaultProps;
 Tags.propTypes = {
+  centered: PropTypes.bool,
   horizontal: PropTypes.bool,
   style: PropTypes.shape,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,

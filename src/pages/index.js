@@ -37,8 +37,8 @@ const IndexPage = () => (
     render={data => (
       <Layout>
         <SEO
-          title="Freelance full-stack developer"
-          keywords={['freelancer', 'developer', 'javascript', 'react', 'rails', 'full-stack']}
+          title="Full stack software engineer"
+          keywords={['full stack', 'software engineer', 'developer', 'javascript', 'react', 'rails', 'full-stack']}
         />
 
         <Header>

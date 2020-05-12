@@ -9,9 +9,9 @@ const BasicProfile = () => (
   <Container>
     <Avatar />
     <Title>Diego Couto</Title>
-    <Description>Freelance full-stack developer for the web and mobile.</Description>
+    <Description>Full stack software engineer working with web and mobile products</Description>
 
-    <Tags tags={['React', 'React Native', 'Rails']} style={{ marginBottom: 36 }} />
+    <Tags centered tags={['React', 'React Native', 'Rails', 'NodeJS', 'Apollo']} style={{ marginBottom: 36 }} />
 
     <CallToAction label="Let's talk!" href="#say-hi" />
   </Container>
