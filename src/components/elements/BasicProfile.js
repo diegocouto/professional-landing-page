@@ -9,7 +9,7 @@ const BasicProfile = () => (
   <Container>
     <Avatar />
     <Title>Diego Couto</Title>
-    <Description>Full stack software engineer working with web and mobile products</Description>
+    <Description>Full-stack software engineer working with web and mobile products</Description>
 
     <Tags centered tags={['React', 'React Native', 'Rails', 'NodeJS', 'Apollo']} style={{ marginBottom: 36 }} />
 

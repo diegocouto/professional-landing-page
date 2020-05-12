@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Diego Couto - Full stack software engineer',
+        name: 'Diego Couto - Full-stack software engineer',
         short_name: 'Diego Couto',
         start_url: '/',
         background_color: '#08112A',

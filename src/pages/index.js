@@ -34,11 +34,11 @@ const query = graphql`
 const IndexPage = () => (
   <StaticQuery
     query={query}
-    render={data => (
+    render={(data) => (
       <Layout>
         <SEO
-          title="Full stack software engineer"
-          keywords={['full stack', 'software engineer', 'developer', 'javascript', 'react', 'rails', 'full-stack']}
+          title="Full-stack software engineer"
+          keywords={['full-stack', 'software engineer', 'developer', 'javascript', 'react', 'rails', 'full-stack']}
         />
 
         <Header>
