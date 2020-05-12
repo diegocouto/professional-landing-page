@@ -21,8 +21,8 @@ const Avatar = ({ large }) => (
         }
       }
     `}
-    render={data => (
-      <AvatarContainer large>
+    render={(data) => (
+      <AvatarContainer large={large}>
         <AvatarImage fluid={data.file.childImageSharp.fluid} alt="Profile Image" />
       </AvatarContainer>
     )}
@@ -30,7 +30,7 @@ const Avatar = ({ large }) => (
 );
 
 const AvatarContainer = styled.div`
-  ${props => (
+  ${(props) => (
     props.large ? `
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 50%;

@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Diego Couto - Full-stack developer',
+        name: 'Diego Couto - Full stack software engineer',
         short_name: 'Diego Couto',
         start_url: '/',
         background_color: '#08112A',
@@ -30,11 +30,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: 'gatsby-plugin-google-fonts-v2',
       options: {
-        fonts: [
-          'Source+Sans+Pro:400,600,700',
-        ],
+        fonts: [{
+          family: 'Source Sans Pro',
+          weights: ['400', '600', '700'],
+        }],
       },
     },
     {
